@@ -1,0 +1,52 @@
+html, body, h1, h2, h3, p, ul, li {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: inherit;
+}
+
+h1, h2, h3, p {
+	font-family: sans-serif;
+	text-align: center;
+}
+	
+.group:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+ul {
+	list-style: none;
+	background: gray;
+	border: 5px solid black;
+	width: 500px;
+	height: 500px;
+	margin: 20px auto;
+}
+
+li {
+	width: 25px;
+	height: 25px;
+	float: left;
+}
+
+li.has-apple {
+	background: red;
+	border-radius: 8px;
+}
+
+li.has-snake {
+	background: green;
+	border-radius: 5px;
+}
+
+h3#losing-message {
+	font-family: sans-serif;
+	text-align: center;
+	display: none;
+}
+
+h3.lose#losing-message {
+	display: block;
+}

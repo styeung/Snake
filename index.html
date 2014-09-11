@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="snake.js"></script>
+		<script src="snake_ui.js"></script>
+		<script src="jquery-1.11.1.js"></script>
+		<link href="snake.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<h1>SNAKE</h1>
+		<br>
+		<h2>Score</h2>
+		<h3 id="score">0</h3>
+		<br>
+		<h3 id="losing-message">You lose!</h3>
+		<ul class="group">
+		</ul>
+		<p>Press 'Space' to pause</p>
+		<script>
+		$(document).ready( function() {
+			for(var i = 0; i < 20; i++) {
+				for(var j = 0; j < 20; j++) {
+					var $el = $("<li></li>")
+					$("ul").append($el);
+					$el.attr('id', i+"_"+j);
+				}
+			}
+			
+			var view = new SnakeGame.View();
+			view.start();
+		});
+		</script>
+	</body>
+</html>
