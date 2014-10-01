@@ -1,3 +1,5 @@
+/* Setting Defaults */
+
 html, body, h1, h2, h3, p, ul, li {
 	margin: 0;
 	padding: 0;
@@ -6,9 +8,11 @@ html, body, h1, h2, h3, p, ul, li {
 }
 
 h1, h2, h3, p {
-	font-family: sans-serif;
+	font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;;
 	text-align: center;
 }
+
+/* Board styles */
 	
 .group:after {
 	content: "";
@@ -31,6 +35,8 @@ li {
 	float: left;
 }
 
+/* Snake and Apple Styles */
+
 li.has-apple {
 	background: red;
 	border-radius: 8px;
@@ -40,6 +46,8 @@ li.has-snake {
 	background: green;
 	border-radius: 5px;
 }
+
+/* Text Styles */
 
 h3#losing-message {
 	font-family: sans-serif;
